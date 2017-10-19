@@ -1,0 +1,222 @@
+@import url("base.css");
+/*侧导航开始*/
+.navmin{
+    width: 50px;
+    height: 50px;
+    background:rgba(255,255,255,0.8);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #7b7b7d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    cursor: pointer;
+    opacity: 1;
+}
+.navopacity{
+    width:160px;
+    height: 100%;
+    background: rgba(0,0,0,0);
+    position: fixed;
+    top: 0;
+    left:0px;
+    z-index: 999;
+}
+aside{
+    width:160px;
+    height: 100%;
+    background:rgba(255,255,255,0.8);
+    position: fixed;
+    top: 0;
+    left:-160px;
+    z-index: 999;
+}
+.nav>div{
+    width: 160px;
+    height: 200px;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+.touxiang input{
+    border: none;
+    background: none;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+.touxiang{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.touxiang>a{
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.touxiang>a>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.nav>ul{
+    width: auto;
+    height: auto;
+    margin-top: 60px;
+}
+.nav>ul>li{
+    width: 100%;
+    height: 53px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    transition: all 1s;
+    position: relative;
+}
+.nav>ul>li:hover{
+    background: skyblue;
+}
+.nav>ul li>a>span{
+    font-size: 14px;
+    padding-left: 15px;
+    line-height:53px;
+}
+.nav>ul li>a{
+    color: #333;
+}
+.nav>ul li>a>div{
+    width: 20px;
+    height: 20px;
+    background: red;
+    float: left;
+    margin-right: 10px;
+    margin-top: 16px;
+
+}
+.yqc{
+    width: 120px;
+    height: auto;
+    position: absolute;
+    top: -50%;
+    left: 160px;
+    display: none;
+    transition: all 0.5s;
+}
+.yqc>li{
+    width: 100%;
+    height: 30px;
+    background: #00b5ec;
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+    line-height: 30px;
+}
+/*侧导航结束*/
+body{
+    padding: 20px;
+    background: papayawhip;
+}
+.title{
+    /*display: block;*/
+    text-align: center;
+    font-size: 30px;
+    line-height: 100px;
+    margin: 0 0 20px;
+    color: #b95b5b;
+}
+.big{
+    width: 100%;
+    height: 600px;
+}
+ul.bigImg{
+    width: 1200px;
+    height: 610px;
+    margin:0 auto;
+
+}
+ul.bigImg>li{
+    width: 285px;
+    height: 285px;
+    float: left;
+    /*background: yellow;*/
+    margin-right: 20px;
+    margin-bottom: 20px;
+    transform-style:preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s;
+    position: relative;
+}
+ul.bigImg>li:nth-of-type(4n){
+    margin-right: 0px;
+}
+ul.bigImg>li>div{
+    width: 285px;
+    height: 285px;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 0.5s;
+    top:0px;
+    left:0px;
+}
+ul.bigImg>li>.front{
+    width: 300px;
+    height: 300px;
+    background:pink;
+    transform: translateZ(-142px);
+}
+
+ul.bigImg>li>.behind{
+    width: 285px;
+    height: 285px;
+    background: pink;
+    position: relative;
+    /*transform: translateZ(142px);*/
+}
+.behind>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.opact{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    padding-top: 100px;
+}
+.opact>div{
+    width: auto;
+    height: 100px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    margin: auto;
+
+}
+.opact>div>h2{
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}
+.opact>div>hr{
+    width: 50px;
+    background: #fff;
+    margin: 20px auto;
+}
+.opact>div>p{
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+ul.bigImg>li:hover{
+    transform: rotateY(180deg);
+}
